@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ginger · Your personal cooking assistant on WhatsApp</title>
+<meta name="description" content="Ginger is a personal cooking assistant on WhatsApp. Text what's in your kitchen or send a fridge photo, and get 3 ideas you can cook right now.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫚</text></svg>">
+<style>
+  :root {
+    --cream: #FBF6EE; --ink: #2B2420; --muted: #6B5F57;
+    --ginger: #C8792B; --ginger-dark: #9C5A1C; --leaf: #2F6B4F; --card: #FFFFFF; --line: #EADFCF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, "Times New Roman", serif; background: var(--cream); color: var(--ink); line-height: 1.6; }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 24px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: bold; }
+  .hero { padding: 56px 0 72px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; }
+  h1 { font-size: 52px; line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 20px; }
+  h1 em { color: var(--ginger); font-style: italic; }
+  .lead { font-size: 20px; color: var(--muted); margin-bottom: 32px; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; background: var(--leaf); color: #fff; text-decoration: none;
+         padding: 16px 26px; border-radius: 999px; font-size: 17px; font-weight: 600; }
+  .btn:hover { background: #24563F; }
+  .note { margin-top: 14px; font-size: 14px; color: var(--muted); }
+  .phone { background: #E9F2EC; border-radius: 28px; padding: 22px; border: 1px solid var(--line); }
+  .bubble { padding: 12px 14px; border-radius: 14px; margin-bottom: 10px; font-size: 15px; max-width: 92%; }
+  .me { background: #DCF7C5; margin-left: auto; border-bottom-right-radius: 4px; }
+  .bot { background: #fff; border-bottom-left-radius: 4px; }
+  .bot b { color: var(--ginger-dark); }
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 34px; margin-bottom: 32px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 24px; }
+  .card .num { font-size: 28px; margin-bottom: 8px; }
+  .card h3 { font-size: 20px; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: 16px; }
+  footer { padding: 40px 0 56px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+  footer a { color: var(--ink); }
+  @media (max-width: 760px) {
+    .hero { grid-template-columns: 1fr; padding-top: 24px; }
+    h1 { font-size: 38px; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header><div class="brand">🫚 Ginger</div></header>
+
+    <div class="hero">
+      <div>
+        <h1>"What do I cook?"<br><em>Just ask Ginger.</em></h1>
+        <p class="lead sans">Your personal cooking assistant on WhatsApp. Text what's in your kitchen or send a photo of your fridge, and get 3 ideas you can make right now.</p>
+        <a class="btn sans" href="https://wa.me/15303254888?text=Hi%20Ginger!">💬 Message Ginger on WhatsApp</a>
+        <p class="note sans">Free while in beta. No app to download.</p>
+      </div>
+      <div class="phone sans" aria-label="Example chat">
+        <div class="bubble me">have paneer, spinach and a few tomatoes. super tired 😩</div>
+        <div class="bubble bot">
+          1. ⚡ Paneer bhurji wraps (15 min)<br>
+          2. Palak dal with jeera rice (25 min)<br>
+          3. ✨ Try something new: saag paneer quesadillas (20 min)<br><br>
+          <b>Reply 1, 2 or 3 for the recipe · more for new ideas</b>
+        </div>
+        <div class="bubble me">2</div>
+        <div class="bubble bot">Palak dal (25 min)<br>You need: 1 cup toor dal, 2 cups spinach, 1 tomato…</div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>How Ginger helps</h2>
+      <div class="grid sans">
+        <div class="card"><div class="num">📸</div><h3>Snap your fridge</h3><p>Send a photo or a quick message. Ginger works with what you already have.</p></div>
+        <div class="card"><div class="num">🧠</div><h3>Remembers your family</h3><p>Tell Ginger once ("we're vegetarian", "kid hates bhindi") and it's applied every time.</p></div>
+        <div class="card"><div class="num">🍳</div><h3>Any meal, any time</h3><p>Breakfast, lunch, dinner, lunchboxes or chai time, with short recipes on request.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sans">
+    <div class="wrap">
+      Ginger is an AI cooking assistant. Suggestions are ideas, not dietary or medical advice. Check ingredients for allergies.<br><br>
+      <a href="privacy.html">Privacy Policy</a> · Contact: <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a><br>
+      © 2026 Ginger
+    </div>
+  </footer>
+</body>
+</html>
